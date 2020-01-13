@@ -47,8 +47,7 @@ module.exports = (env) => {
       }]
     },
     plugins: [
-      new BundleAnalyzerPlugin({analyzerPort: 9000}),
-      CSSExtract
+      CSSExtract 
     ],
     devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
     devServer: {
